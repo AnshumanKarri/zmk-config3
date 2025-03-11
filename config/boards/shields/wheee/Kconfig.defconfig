@@ -1,0 +1,17 @@
+if SHIELD_WHEEE_LEFT
+
+# Name must be less than 16 characters long!
+config ZMK_KEYBOARD_NAME
+    default "wheee"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_WHEEE_LEFT || SHIELD_WHEEE_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif
